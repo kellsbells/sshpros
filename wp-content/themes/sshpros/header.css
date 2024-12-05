@@ -1,0 +1,109 @@
+.header {
+    background-color: #006EC7;
+    color: white;
+}
+
+.header .container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.header .branding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.header .branding h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    max-width: 224px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header .branding img {
+    max-height: 80px;
+    padding-right: 10px;
+}
+
+.header .site-title {
+    display: flex;
+    align-items: center;
+}
+
+.header nav {
+    text-align: right;
+}
+
+.toggle-nav {
+    display: flex;
+    position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .toggle-nav {
+    display: none;
+  }
+}
+
+.hamburger {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburger .close {
+    display: none;
+    transform: rotate(45deg);
+    font-size: 80px;
+}
+
+.hamburger.active .close {
+    display: block;
+}
+
+.hamburger.active .open {
+    display: none;
+}
+
+.nav-items {
+    display: none;
+}
+
+.nav-items.active {
+    display: block;
+    position: absolute;
+    width: auto;
+    top: 100%;
+    right: -40px;
+    background-color: #006EC7;
+    min-width: 100vw;
+}
+
+.nav-items .menu {
+    justify-content: right;
+}
+
+.nav-items li a {
+    display: block;
+    color: white;
+    padding: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-items li a span {
+    max-width: 1000px;
+    padding: 0px 40px;
+    margin: 0 auto;
+    width: auto;
+    display: block;
+}
+
+.nav-items li a:hover {
+    background-color: white;
+    color: #006EC7;
+}
